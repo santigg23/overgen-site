@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OVERGEN — Knowledge Graphs & Local AI</title>
+  <meta name="description" content="OVERGEN builds knowledge graph infrastructure and local AI systems. GraphRAG, Neo4j, Ollama — sin la nube, sin el ruido." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Reveal animation style (injected here to keep CSS clean) -->
+  <style>
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    [data-reveal].revealed {
+      opacity: 1;
+      transform: none;
+    }
+    [data-reveal]:nth-child(2) { transition-delay: 0.08s; }
+    [data-reveal]:nth-child(3) { transition-delay: 0.16s; }
+    [data-reveal]:nth-child(4) { transition-delay: 0.24s; }
+    [data-reveal]:nth-child(5) { transition-delay: 0.32s; }
+    [data-reveal]:nth-child(6) { transition-delay: 0.40s; }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#hero" class="nav-logo">OVERGEN</a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="container">
+      <p class="hero-pre">
+        <span>0verløkd</span> &mdash; Santiago Galvis &mdash; Colombia
+      </p>
+
+      <h1
+        class="hero-title glow"
+        data-glitch="OVERGEN"
+        aria-label="OVERGEN"
+      >OVERGEN</h1>
+
+      <p class="hero-tagline">
+        <span
+          id="hero-tagline-text"
+          data-text="Infraestructura de grafos de conocimiento e IA local. Sin la nube. Sin el ruido."
+        >Infraestructura de grafos de conocimiento e IA local. Sin la nube. Sin el ruido.</span><span class="cursor" aria-hidden="true"></span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-ghost">Contacto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label">Sobre mí</p>
+      <h2 class="section-title">Construyo con grafos<br />porque importa la estructura.</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Soy <strong>Santiago Galvis</strong>, analista de software y fundador de OVERGEN.
+            Trabajo en la intersección de grafos de conocimiento, modelos de lenguaje locales
+            y arquitecturas que puedo entender y controlar completamente.
+          </p>
+          <p>
+            No me interesa subcontratar mi razonamiento a una API de terceros que cambia los precios
+            cada trimestre. Me interesa construir sistemas que funcionen, que duren, y que yo pueda
+            abrir y entender.
+          </p>
+          <p>
+            <strong>OVERGEN</strong> = <em>Ontology-Versioned Engine for Reasoning and Graph Engineering</em>.
+            El nombre está pensado para envejecer bien: en 2040, los grafos de conocimiento son
+            infraestructura estándar. Estamos construyendo esa infraestructura ahora.
+          </p>
+        </div>
+
+        <div class="about-meta">
+          <div class="meta-block">
+            <div class="meta-label">Rol</div>
+            <div class="meta-value">Analista de Requisitos &amp; Testing</div>
+          </div>
+          <div class="meta-block">
+            <div class="meta-label">Formación</div>
+            <div class="meta-value">Análisis y Desarrollo de Software — SENA</div>
+          </div>
+          <div class="meta-block">
+            <div class="meta-label">Ubicación</div>
+            <div class="meta-value">Colombia</div>
+          </div>
+          <div class="meta-block">
+            <div class="meta-label">Handle</div>
+            <div class="meta-value" style="color: var(--green);">0verløkd</div>
+          </div>
+          <div class="meta-block">
+            <div class="meta-label">Hardware</div>
+            <div class="meta-value">MacBook Air M4 — 16 GB RAM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">Proyectos</p>
+      <h2 class="section-title">Lo que estoy<br />construyendo ahora.</h2>
+
+      <div class="projects-grid">
+
+        <!-- Overlokd.IA -->
+        <div class="project-card" data-reveal>
+          <div class="project-status">
+            <span class="status-dot"></span>
+            <span class="status-text">En desarrollo activo — abr 2026</span>
+          </div>
+          <h3 class="project-name">Overlokd.IA</h3>
+          <p class="project-desc">
+            Asistente personal construido sobre GraphRAG y modelos de lenguaje locales.
+            Toda la inteligencia corre en mi máquina: sin APIs externas, sin datos
+            enviados a terceros, sin latencia de red para lo que importa.
+          </p>
+          <p class="project-desc">
+            El grafo de conocimiento conecta contexto personal, documentos y memoria
+            episódica. El LLM razona sobre el grafo, no sobre texto plano.
+          </p>
+          <div class="project-tags">
+            <span class="tag">GraphRAG</span>
+            <span class="tag">Neo4j / Kuzu</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">Python</span>
+            <span class="tag">Local-first</span>
+          </div>
+        </div>
+
+        <!-- Ørbita -->
+        <div class="project-card" data-reveal>
+          <div class="project-status">
+            <span class="status-dot" style="animation-delay: 0.5s;"></span>
+            <span class="status-text">En desarrollo</span>
+          </div>
+          <h3 class="project-name">Ørbita</h3>
+          <p class="project-desc">
+            Red de contactos personales auto-alojada. La premisa es simple: LinkedIn
+            es una caja negra que controla tus relaciones. Ørbita las mapea en un grafo
+            que yo controlo.
+          </p>
+          <p class="project-desc">
+            Explora grados de separación, visualiza conexiones, entiende cómo se
+            distribuye tu red. Proyecto de aprendizaje y showcase técnico al mismo tiempo.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Neo4j / Kuzu</span>
+            <span class="tag">Graph viz</span>
+            <span class="tag">Self-hosted</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STACK ── -->
+  <section id="stack">
+    <div class="container">
+      <p class="section-label">Stack</p>
+      <h2 class="section-title">Herramientas<br />con las que trabajo.</h2>
+
+      <div class="stack-grid">
+        <div class="stack-item" data-reveal>
+          <span class="stack-icon">◈</span>
+          <span class="stack-name">Neo4j</span>
+          <span class="stack-role">Grafo principal</span>
+        </div>
+        <div class="stack-item" data-reveal>
+          <span class="stack-icon">◇</span>
+          <span class="stack-name">Kuzu</span>
+          <span class="stack-role">Grafo embebido</span>
+        </div>
+        <div class="stack-item" data-reveal>
+          <span class="stack-icon">▣</span>
+          <span class="stack-name">GraphRAG</span>
+          <span class="stack-role">Retrieval</span>
+        </div>
+        <div class="stack-item" data-reveal>
+          <span class="stack-icon">◉</span>
+          <span class="stack-name">Ollama</span>
+          <span class="stack-role">LLM local</span>
+        </div>
+        <div class="stack-item" data-reveal>
+          <span class="stack-icon">▸</span>
+          <span class="stack-name">Python</span>
+          <span class="stack-role">Backend / scripts</span>
+        </div>
+        <div class="stack-item" data-reveal>
+          <span class="stack-icon">◐</span>
+          <span class="stack-name">Claude Code</span>
+          <span class="stack-role">Dev assistant</span>
+        </div>
+        <div class="stack-item" data-reveal>
+          <span class="stack-icon">▦</span>
+          <span class="stack-name">Ubuntu</span>
+          <span class="stack-role">Servidor local</span>
+        </div>
+        <div class="stack-item" data-reveal>
+          <span class="stack-icon">◑</span>
+          <span class="stack-name">macOS M4</span>
+          <span class="stack-role">Dev principal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label">Contacto</p>
+      <h2 class="section-title">Hablemos.</h2>
+
+      <p class="contact-intro">
+        Si construyes con grafos, LLMs locales, o quieres explorar colaboraciones —
+        escríbeme. Sin formularios, sin CRM, sin bots.
+      </p>
+
+      <div class="contact-links">
+        <a
+          href="https://www.linkedin.com/in/sggm/"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-reveal
+        >
+          <span class="contact-link-icon">in</span>
+          <span>
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">linkedin.com/in/sggm</span>
+          </span>
+        </a>
+
+        <a
+          href="https://github.com/0verlokd"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-reveal
+        >
+          <span class="contact-link-icon">gh</span>
+          <span>
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">github.com/0verlokd</span>
+          </span>
+        </a>
+
+        <a
+          href="mailto:hola@overgen.dev"
+          class="contact-link"
+          data-reveal
+        >
+          <span class="contact-link-icon">@</span>
+          <span>
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">hola@overgen.dev</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span class="footer-logo">OVERGEN</span>
+    <span class="footer-copy">© <span id="year"></span> Santiago Galvis — 0verløkd</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
