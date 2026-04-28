@@ -24,8 +24,8 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-mono);
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.75;
   overflow-x: hidden;
 }
 
@@ -299,7 +299,7 @@ nav {
 
 .about-text p {
   color: var(--text);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .about-text p:last-child { margin-bottom: 0; }
@@ -339,7 +339,7 @@ nav {
 
 .meta-value {
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* ── Projects ── */
@@ -415,8 +415,8 @@ nav {
 
 .project-desc {
   color: var(--text);
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.75;
   margin-bottom: 24px;
 }
 
@@ -468,18 +468,18 @@ nav {
 }
 
 .stack-name {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text);
   letter-spacing: 0.08em;
   display: block;
 }
 
 .stack-role {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--dim);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-top: 4px;
+  margin-top: 6px;
   display: block;
 }
 
@@ -569,6 +569,10 @@ footer {
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
+  section {
+    padding: 64px 0;
+  }
+
   .about-grid,
   .projects-grid {
     grid-template-columns: 1fr;
